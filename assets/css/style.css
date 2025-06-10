@@ -10093,6 +10093,7 @@ div[class*="col"]:nth-of-type(4n + 4) .statistics-item::after {
     }
     100%{
         opacity: 0;
+        display: none;
     }
 }
 .giff{
