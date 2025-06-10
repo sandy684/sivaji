@@ -1,0 +1,132 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+    }
+
+   
+
+@keyframes bannerFade {
+  0% { background-position: center top; }
+  50% { background-position: center center; }
+  100% { background-position: center bottom; }
+}
+
+.welcome-banner h1 {
+  font-size: 1.6rem;
+  color: #03001d;
+}
+
+.welcome-banner p {
+  font-size: 0.9rem;
+  color: #081d08;
+}
+
+
+
+.info-box:hover {
+  background-color: rgba(31, 56, 35, 0.486);
+  transform: scale(1.03);
+}
+
+.info-box small {
+  font-size: 0.75rem;
+  color: #ddd;
+  display: block;
+}
+
+.info-box div {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .welcome-banner {
+    min-height: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .welcome-banner h1 {
+    font-size: 1.3rem;
+  }
+
+  .welcome-banner p {
+    font-size: 0.8rem;
+  }
+
+  .info-box {
+    padding: 10px;
+  }
+
+  .info-box div {
+    font-size: 0.9rem;
+  }
+}
+
+
+    .accordion-container {
+      max-width: 800px;
+      margin: auto;
+      padding: 10px;
+    }
+
+    .accordion {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #fff;
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+
+    .accordion-header {
+      background-color: #eaeaea;
+      cursor: pointer;
+      padding: 18px 24px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .accordion-header:hover {
+      background-color: #dcdcdc;
+    }
+
+    .accordion-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      background-color: #fff;
+      padding: 0 24px;
+    }
+
+    .accordion-body ul {
+      padding: 20px 0 20px 20px;
+      margin: 0;
+      list-style: disc;
+    }
+
+    .accordion-body li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .accordion.open .accordion-body {
+      max-height: 2000px;
+      padding: 0 24px 20px;
+    }
+
+    @media (max-width: 600px) {
+      .accordion-header {
+        font-size: 16px;
+        padding: 14px 18px;
+      }
+
+      .accordion-body {
+        padding: 0 18px;
+      }
+
+      .accordion.open .accordion-body {
+        padding: 0 18px 18px;
+      }
+    }

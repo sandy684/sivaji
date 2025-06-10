@@ -1,0 +1,196 @@
+.visa-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.visa-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.3);
+}
+
+.visa-price {
+  font-weight: bold;
+  color: #28a745; /* Bootstrap green */
+  font-size: 18px;
+}
+.text-indigo{
+    color: rgb(52, 82, 114);
+}
+.country-link {
+  display: inline-block;  /* or block */
+  text-decoration: none;  /* optional, removes underline */
+  position: relative;     /* helps stacking */
+  width: 250px;           /* same as country-box */
+  height: 180px;          /* same as country-box */
+}
+
+.country-link:hover .country-box::before {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.country-link:hover .overlay {
+  opacity: 1;
+}
+
+.country-box {
+  position: relative;
+  width: 250px;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.country-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0); /* transparent initially */
+  transition: background 0.4s ease;
+  z-index: 1;
+}
+
+.country-box:hover::before {
+  background: rgba(0, 0, 0, 0.5); /* darken image on hover */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.4s ease;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 1); /* strong glow */
+}
+
+.country-box:hover .overlay {
+  opacity: 1;
+}
+
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal box */
+.modal-content {
+  background: #fff;
+  max-width: 700px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  animation: zoomIn 0.4s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 28px;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #e60023;
+}
+
+/* Headings and lists */
+.modal-content h2,
+.modal-content h3 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.modal-content ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.modal-content li {
+  margin-bottom: 5px;
+}
+
+.modal-content p {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Open button */
+.terms-btn {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+
+
+/* Animations */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    background-color: rgba(20, 20, 20, 0);
+  }
+  to {
+    background-color: rgba(20, 20, 20, 0.7);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 20px;
+  }
+  .modal-content h2,
+  .modal-content h3 {
+    font-size: 18px;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}

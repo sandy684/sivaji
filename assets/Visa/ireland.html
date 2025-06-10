@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sivaji son</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- visa hyper liks -->
+    <link rel="stylesheet" href="./visa-hyper.css">
+    <!-- visa css -->
+    <link rel="stylesheet" href="assets/css/visa.css">
+    <!-- fontawesome css link -->
+    <link rel="stylesheet" href="../css/fontawesome-all.min.css">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/fav.png" type="image/x-icon">
+    <!-- swipper css link -->
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <!-- lightcase css links -->
+    <link rel="stylesheet" href="../css/lightcase.css">
+    <!-- odometer css link -->
+    <link rel="stylesheet" href="../css/odometer.css">
+    <!-- line-awesome-icon css -->
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <!-- line-awesome-icon css -->
+    <link rel="stylesheet" href="../css/line-awesome.min.css">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- aos.css -->
+    <link rel="stylesheet" href="..css/aos.css">
+    <!-- nice select css -->
+    <link rel="stylesheet" href="..css/nice-select.css">
+    <!-- main style css link -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+         .welcome-banner {
+  background: linear-gradient(rgba(165, 162, 162, 0.848), rgba(255, 255, 255, 0.629)),
+              url("./ireland1.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 320px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  animation: bannerFade 15s infinite ease-in-out;
+}
+.info-box {
+  background-color: rgba(5, 0, 49, 0.699);
+  padding: 12px 8px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.info-box:hover{
+    background-color: rgba(0, 0, 49, 0.426);
+}
+    </style>
+
+</head>
+<body>
+<!-- 
+    <header class="header-section header-section-one header-two">
+            <div class="header">
+                <div class="header-bottom-area">
+                    <div class="container-fluid">
+                        <div class="header-menu-content">
+                            <nav class="navbar navbar-expand-lg p-0">
+                                <a class="site-logo site-title" href="index.html"><img src="assets/images/logo.png"
+                                        alt="site-logo"></a>
+                                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="fas fa-bars"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav main-menu ml-auto">
+                                        <li class="menu_has_children"><a href="#0">Home</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="index.html">Home One</a></li>
+                                                <li><a href="index-two.html">Home Two</a></li>
+                                                <li><a href="index-dark.html">Home Dark</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li class="menu_has_children"><a href="#0">Pages</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="service.html">Service</a></li>
+                                                <li><a href="service-details.html">Service Details</a></li>
+                                                <li><a href="deals.html">Deals</a></li>
+                                                <li><a href="deals-details.html">Deals Details</a></li>
+                                                <li><a href="package.html">Package</a></li>
+                                                <li><a href="package-details.html">Package Details</a></li>
+                                                <li><a href="course.html">Our Course</a></li>
+                                                <li><a href="course-details.html">Course Details</a></li>
+                                                <li><a href="team.html">Our Team</a></li>
+                                                <li><a href="team-details.html">Team Details</a></li>
+                                                <li><a href="faq.html">FAQ</a></li>
+                                                <li><a href="register.html">Sign Up</a></li>
+                                                <li><a href="login.html">Sign In</a></li>
+                                                <li><a href="404.html">404 Page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu_has_children"><a href="#0">Blog</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="blog-classic.html">Blog Classic</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="faq.html">Faq</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                    <div class="header-right">
+                                        <div class="search-bar d-none d-lg-block">
+                                            <a href="#0"><i class="fas fa-search"></i></a>
+                                            <div class="header-top-search-area">
+                                                <form class="header-search-form"
+                                                    action="https://gamblingscript.com/search" method="GET">
+                                                    <input type="search" name="keyword" id="header_search"
+                                                        placeholder="Search Product...">
+                                                    <button class="header-search-btn"><i
+                                                            class="fas fa-search"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="header-action-area">
+                                            <a href="service-details.html" class="action-btn two"><i
+                                                    class="icon-btn-icon"></i></a>
+                                            <div class="header-action">
+                                                <a href="service-details.html" class="btn--base"><i
+                                                        class="icon-btn-icon"></i> Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header> -->
+
+    <div class="welcome-banner text-white d-flex align-items-center">
+  <div class="container py-5">
+    <h1 class="fw-semibold fs-4 mb-2">Welcome to Ireland Visa Services</h1>
+    <p class="fs-6 mb-4">Apply for your Ireland visa the easy way – Simple, Secure, and Efficient!</p>
+    <div class="row justify-content-center g-3">
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="info-box text-center">
+          <small>Processing Time</small>
+          <div>72 hrs</div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="info-box text-center">
+          <small>Starting From</small>
+          <div>XXXXX</div>
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="info-box text-center">
+          <small>Visa Approval</small>
+          <div>XXX</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+
+
+     <div class="accordion-container">
+    <div class="accordion open">
+  <div class="accordion-header">Ireland Visa – General Document Requirements</div>
+  <div class="accordion-body">
+   <ul>
+      <li>Valid original passport with a minimum of six months’ validity and at least three blank pages, including all previous passports if applicable.</li>
+      <li>Completed Schengen visa application form.</li>
+      <li>Two recent color photographs meeting the official photo specifications.</li>
+      <li>Personal cover letter—on plain paper for employed applicants or on company letterhead for self-employed individuals.</li>
+      <li>Original, updated bank statements for the last six months.</li>
+      <li>Income Tax Returns or Form 16 for the past three years.</li>
+      <li>Confirmed round-trip flight tickets.</li>
+      <li>Hotel reservation confirmation.</li>
+      <li>Detailed day-wise travel itinerary.</li>
+      <li>Travel insurance with minimum coverage of EUR 30,000.</li>
+    </ul>
+  </div>
+</div>
+
+    <div class="accordion">
+      <div class="accordion-header">Ireland Visa – Additional Requirements Based on Applicant Type</div>
+      <div class="accordion-body">
+        <ul>
+          <li><strong>If Employed:</strong> Original leave approval certificate with company seal and signature; salary slips for the last 3 months.</li>
+          <li><strong>If Self-Employed:</strong> Business registration license, Memorandum of Association (MOA), or partnership deed; updated company bank statements for the last 6 months; company income tax returns for the past 3 years.</li>
+          <li><strong>If Retired:</strong> Proof of retirement such as a pension book or recent pension statements.</li>
+          <li><strong>If Student:</strong> Valid school, college, or institute ID card; bonafide certificate from the institution.</li>
+          <li><strong>If Minor:</strong> Birth certificate; notarized No Objection Certificate (NOC) from parents or non-accompanying parent on Rs. 100/- stamp paper; ID proof of parent (passport or PAN card).</li>
+          <li><strong>If Visiting Friends or Relatives:</strong> Invitation letter; inviter’s ID proof (passport or resident permit); proof of address such as an electricity or utility bill.</li>
+          <li><strong>If Sponsored:</strong> Sponsorship letter; sponsor’s valid national ID (passport, PAN card, or resident permit); updated bank statements for the last 6 months; income tax returns for the past 3 years.</li>
+          <li><strong>For Business Visa:</strong> Invitation letter from the host company detailing the purpose of the trip and business information; covering letter from the Indian company on official letterhead.</li>
+        </ul>
+        <p><strong>Note:</strong> The government enforces strict rules regarding photograph requirements; please ensure your photos meet the official specifications.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+    <footer class="footer-section section--bg pt-120">
+            <div class="footer-element" data-aos="fade-left" data-aos-duration="1200">
+                <img src="../images/element/element-1.png" alt="element">
+            </div>
+            <div class="container">
+                <div class="footer-top-area">
+                    <div class="row align-items-end mb-30-none">
+                        <div class="col-xl-4 col-lg-3 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a class="site-logo site-title" href="index.html"><img src="./sivajison_logo.png"
+                                            alt="site-logo"></a>
+                                </div>
+                                <p>Established in 2016, Sivaji Son Tours and Travels Pvt Ltd began with a vision to revolutionize the travel industry through reliable, affordable, and tech-enabled solutions.</p>
+                            </div>
+                        </div>
+                         <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <h4 class="widget-title">VISA SERVICE</h4>
+                                <ul class="footer-list">
+                                    <li><a href="#0">Singapore</a></li>
+                                    <li><a href="#0">Malaysia</a></li>
+                                    <li><a href="#0">Thailand</a></li>
+                                    <li><a href="#0">Uk</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <h4 class="widget-title">SERVICES</h4>
+                                <ul class="footer-list">
+                                    <li><a href="#0">Visa</a></li>
+                                    <li><a href="#0">Passport</a></li>
+                                    <li><a href="#0">Hotel Booking</a></li>
+                                    <li><a href="#0">Cruise</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <h4 class="widget-title">CHENNAI</h4>
+                                <ul class="footer-list">
+                                    <li><a href="#0">VSD Plaza, No 1, 2nd Ave, AA Block, Anna Nagar,Chennai, Tamil Nadu 600040</a></li>
+                                    <li><a href="#0">+91 96551 50814</a></li>
+                                    <li><a href="#0">Saranraj@sivajison.com</a></li>
+                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="footer-bottom-area">
+                    <div class="row mb-30-none">
+                        <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <h4 class="title">Get started</h4>
+                                <ul class="footer-list">
+                                    <li><a href="#0">Visa Services</a></li>
+                                    <li><a href="#0">Travel Packages</a></li>
+                                    <li><a href="#0">Register</a></li>
+                                    <li><a href="#0">Current Offers</a></li>
+                                    <li><a href="#0">Mobile App</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <h4 class="title">How it works</h4>
+                                <ul class="footer-list">
+                                    <li><a href="#0">How it works</a></li>
+                                    <li><a href="#0">Ways to apply for Visa</a></li>
+                                    <li><a href="#0">Ways to book travel</a></li>
+                                    <li><a href="#0">Private Tours & Packages</a></li>
+                                    <li><a href="#0">Visa & Travel Costs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <h4 class="title">About us</h4>
+                                <ul class="footer-list">
+                                    <li><a href="#0">About us</a></li>
+                                    <li><a href="#0">News & press</a></li>
+                                    <li><a href="#0">Blog</a></li>
+                                    <li><a href="#0">FAQs</a></li>
+                                    <li><a href="#0">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <h4 class="title">Newsletter</h4>
+                                <p>SivajiSon was founded in 2008 by a team of experienced travel and visa consultants dedicated to delivering seamless travel solutions.</p>
+                                <form class="subscribe-form">
+                                    <label class="subscribe-icon"><i class="las la-envelope"></i></label>
+                                    <input type="email" class="form--control" placeholder="Enter Email">
+                                    <button type="submit" class="btn--base">Subscribe Us <i
+                                            class="icon-btn-icon ml-1"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="copyright-area">
+                    <div class="social-area">
+                        <ul class="footer-social">
+                            <li><a href="#0"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#0" class="active"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#0"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#0"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <p>© 2025 SivajiSon Travels & Visa Services. All rights reserved.</p>
+                </div>
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jquery -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- swipper js -->
+    <script src="assets/js/swiper.min.js"></script>
+    <!-- lightcase js-->
+    <script src="assets/js/lightcase.js"></script>
+    <!-- odometer js -->
+    <script src="assets/js/odometer.min.js"></script>
+    <!-- viewport js -->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!-- progress js -->
+    <script src="assets/js/circle-progress.min.js"></script>
+    <!-- aos js file -->
+    <script src="assets/js/aos.js"></script>
+    <!-- nice select js -->
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <!-- main -->
+    <script src="assets/js/main.js"></script>
+    <!-- visa-doccument -->
+     <script src="./visa-hyper.js"></script>
+</body>
+</html>
